@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Wifi Attendance System Admin</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="button">Button</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="headline">Headline</string>
+    <string name="subtitle">subtitle</string>
+    <string name="send_reset_email">Send reset email</string>
+
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <!--    <string name="title_notifications">Notifications</string>-->
+
+    <string name="profile">Profile</string>
+    <string name="attendance">Attendance</string>
+    <string name="stats">Stats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">Notifications</string>
+    <string name="let_s_get_to_work">Let\'s get to work</string>
+    <string name="check_in">Check In</string>
+    <string name="your_hours_will_be_calculated_here">Your hours will be calculated here</string>
+    <string name="_24">24</string>
+    <string name="joseph_kamal">joseph Kamal</string>
+    <string name="josephkamal_gmail_com">Josephkamal@gmail.com</string>
+    <string name="_923164944177">+923164944177</string>
+    <string name="sr_android_app_developer">Sr. Android App Developer</string>
+</resources>
