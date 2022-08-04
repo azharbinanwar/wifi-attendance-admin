@@ -30,4 +30,35 @@
     <string name="josephkamal_gmail_com">Josephkamal@gmail.com</string>
     <string name="_923164944177">+923164944177</string>
     <string name="sr_android_app_developer">Sr. Android App Developer</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">Home</string>
+    <string name="employees">All Employees</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="admin_name">Admin Name</string>
+    <string name="admin_mail_com">admin@mail.com</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="designation">Designation</string>
+    <string name="create_employee_profile">Create Employee Profile</string>
+    <string name="wifi_s">Wifi(s)</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="network_id">Network id</string>
+    <string name="add_wifi">Add Wifi</string>
+    <string name="please_connect_to_the_wifi">Please connect to the wifi</string>
+    <string name="you_re_not_connected_to_any_wifi">You\'re not connected to any wifi</string>
+    <string name="wifi_name">Wifi Name</string>
+    <string name="wifi_id">Wifi id</string>
+    <string name="added_by_you">Added by You</string>
+    <string name="please_add_wifi_networks">Please press add button to add an wifi network</string>
+    <string name="you_denied_permission">You denied permission</string>
+    <string name="working_time">Working time</string>
+    <string name="logout">Logout</string>
 </resources>

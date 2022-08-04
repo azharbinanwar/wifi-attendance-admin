@@ -1,4 +1,4 @@
-package dev.azsoft.wifiattendancesystemadmin.utils;
+package dev.azsoft.wifiattendancesystemadmin.databasehelper;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -18,23 +18,22 @@ public class SharedPrefs {
     }
 
     public void setString(String key, String value) {
-        SharedPreferences.Editor e = prefs.edit();
-        e.putString(key, value);
-        e.apply();
+        prefs.edit().putString(key, value).apply();
+    }
+
+    public String getString(String key) {
+        return prefs.getString(key, "");
     }
 
     public void setBoolean(String key, boolean value) {
-        SharedPreferences.Editor e = prefs.edit();
-        e.putBoolean(key, value);
-        e.apply();
+        prefs.edit().putBoolean(key, value).apply();
     }
 
     public boolean getBoolean(String key, boolean defaultValue) {
         return prefs.getBoolean(key, defaultValue);
     }
 
-    public boolean getBoolean(String key) {
-        return prefs.getBoolean(key, false);
+    public void clear(){
+        prefs.edit().clear().apply();
     }
-
 }

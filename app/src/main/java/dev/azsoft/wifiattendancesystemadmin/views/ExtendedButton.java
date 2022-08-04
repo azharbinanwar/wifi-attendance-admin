@@ -84,10 +84,6 @@ public class ExtendedButton extends RelativeLayout {
     }
 
     public int getTextColor() {
-//        TypedValue typedValue = new TypedValue();
-//        Resources.Theme theme = mContext.getTheme();
-//        theme.resolveAttribute(com.google.android.material.R.attr.colorOnPrimary, typedValue, true);
-//        int color = typedValue.data;
         return attributes.getInt(R.styleable.ExtendedButton_android_textColor, getThemeColor(R.color.color_on_primary));
     }
 
@@ -101,13 +97,11 @@ public class ExtendedButton extends RelativeLayout {
 
     public void setProcessing(boolean processing) {
         if (processing) {
-            extCircularProgressIndicator.setVisibility(VISIBLE);
-            extBtn.setText("");
             extBtn.setClickable(false);
+            extCircularProgressIndicator.setVisibility(VISIBLE);
         } else {
-            extCircularProgressIndicator.setVisibility(GONE);
-            extBtn.setText(getText());
             extBtn.setClickable(true);
+            extCircularProgressIndicator.setVisibility(GONE);
         }
     }
 
@@ -186,16 +180,6 @@ public class ExtendedButton extends RelativeLayout {
             int pixelWidth = attributes.getDimensionPixelSize(R.styleable.ExtendedButton_android_layout_width, LayoutParams.MATCH_PARENT);
             layoutParams = new LayoutParams(pixelWidth, pixelHeight);
         }
-//        if ((width.equals("-1") || width.equals("-2")) && (height.equals("-2") || height.equals("-1"))) {
-//            layoutParams = new LayoutParams(Integer.parseInt(width), height.equals("-2") ? 168 : Integer.parseInt(height));
-//            if (width.equals("-2")) {
-//                extBtn.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, height.equals("-2") ? LayoutParams.MATCH_PARENT : Integer.parseInt(height)));
-//            }
-//        } else {
-//            int pixelHeight = attributes.getDimensionPixelSize(R.styleable.ExtendedButton_android_layout_height, LayoutParams.MATCH_PARENT);
-//            int pixelWidth = attributes.getDimensionPixelSize(R.styleable.ExtendedButton_android_layout_width, -LayoutParams.MATCH_PARENT);
-//            layoutParams = new LayoutParams(pixelWidth, pixelHeight);
-//        }
         layoutParams.setMargins(0, 0, 0, 0);
         extRL.setLayoutParams(layoutParams);
     }

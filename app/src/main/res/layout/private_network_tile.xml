@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/value_12">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_72">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/wifi_icon"
+            android:layout_width="@dimen/value_72"
+            android:layout_height="@dimen/value_72"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/value_12"
+            android:background="?colorPrimary"
+            android:src="@drawable/ic_wifi"
+            app:contentPadding="@dimen/radius_8"
+            android:tint="?colorOnPrimary"
+            app:shapeAppearanceOverlay="@style/ShapeableImageView.Circular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/wifi_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_wifi_name"
+                style="@style/TextAppearance.Material3.TitleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_name" />
+
+            <TextView
+                android:id="@+id/tv_wifi_id"
+                style="@style/TextAppearance.Material3.BodySmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wifi_id" />
+
+            <TextView
+                android:id="@+id/tv_added_by"
+                style="@style/TextAppearance.Material3.BodySmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/added_by_you" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
